@@ -1,0 +1,138 @@
+* {
+    border: 1px dashed red;
+    margin: 0px;
+    padding: 0%;
+}
+
+html {
+    font-size: 16px;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    background-color: black;
+    align-items: center;
+    width: 100%;
+    height: 3vh;
+    margin: 0px;
+    padding: 0px;
+    color: #F3F4F6;
+    font-family: roboto;
+}
+
+body {
+    font-family: roboto;
+}
+
+#contact-info {
+    display: flex;
+    width: 50%;
+    padding-left: 1%;
+    align-items: center;
+    gap: 3%;
+    height: 3vh;
+}
+
+#contact-info a {
+    text-decoration: none;
+    color: #F3F4F6;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+#topbarsocialmedia {
+    display: flex;
+    width: 50%;
+    height: 3vh;
+    justify-content: right;
+    align-items: center;
+    padding-right: 3%;
+    gap: 1%;
+}
+
+#topbarsocialmedia img {
+    width: 2.5vh;
+    height: 2.5vh;
+    border-radius: 20%;
+}
+
+#left-bar {
+    height: 97vh;
+    width: 20%;
+    background-color: #1E3A8A;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+#profile-pic img {
+    width: 75%;
+    height: 75%;
+    border-radius: 50%;
+}
+
+#profile-pic {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 40vh;
+    margin: 0px;
+    padding: 0px;
+}
+
+#left-description {
+    width: 100%;
+    text-align: center;
+}
+
+#left-description h1{
+    color: #60A5FA;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F3F4F6;
+    width: 100%;
+    height: 6vh;
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+#left-description h2{
+    color: #F3F4F6;
+    background-color: #60A5FA;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 4vh;
+    width: 100%;
+    text-align: center;
+    font-size: 1.7rem;
+}
+
+#left-menu {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    height: 47vh;
+    gap: 3vh;
+    padding-top: 6vh
+}
+
+#left-menu a {
+    color: #F3F4F6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 5vh;
+    font-size: 2rem;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#left-menu a:hover {
+    background-color: #60A5FA;
+}
