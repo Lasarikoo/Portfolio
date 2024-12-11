@@ -39,12 +39,12 @@ body {
 
 .phone-link {
     left: 7.5vh;
-    animation-delay: 0s;
+    animation-delay: 10s;
 }
 
 .mail-link {
     left: 4vh;
-    animation-delay: 5s;
+    animation-delay: 15s;
 }
 
 
@@ -64,6 +64,20 @@ body {
     100% {
       opacity: 0; /* Permanece invisible */
     }
+  }
+
+  @keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+  }
+
+  .fadeIn {
+    opacity: 0;
+    animation: fadeIn 1s forwards;
   }
 
 #topbarsocialmedia {
