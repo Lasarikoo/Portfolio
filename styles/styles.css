@@ -8,20 +8,6 @@ html {
     font-size: 1vh;
 }
 
-header {
-    display: flex;
-    flex-direction: row;
-    background-color: black;
-    align-items: center;
-    width: 100%;
-    height: 3vh;
-    margin: 0px;
-    padding: 0px;
-    color: #F3F4F6;
-    font-family: roboto;
-    position: fixed;
-}
-
 body {
     font-family: roboto;
 }
@@ -33,46 +19,95 @@ body {
 }
 
 #contact-info {
-    display: flex;
-    width: 50%;
-    padding-left: 1%;
-    align-items: center;
-    gap: 3%;
+    position: relative;
+    width: 100%;
     height: 3vh;
+    font-size: 2.4rem;
+    color: #F3F4F6;
+    font-weight: bold;
+    overflow: hidden;
 }
 
-#contact-info a {
-    text-decoration: none;
+.fade {
+    position: absolute;
     color: #F3F4F6;
-    font-size: 2rem;
+    text-decoration: none;
     font-weight: bold;
+    opacity: 0;
+    animation: fadeAnimation 10s infinite;
 }
+
+.phone-link {
+    left: 7.5vh;
+    animation-delay: 0s;
+}
+
+.mail-link {
+    left: 4vh;
+    animation-delay: 5s;
+}
+
+
+@keyframes fadeAnimation {
+    0% {
+      opacity: 0; /* Invisible */
+    }
+    5% {
+      opacity: 1; /* Comienza a aparecer */
+    }
+    45% {
+      opacity: 1; /* Permanece visible */
+    }
+    50% {
+      opacity: 0; /* Comienza a desaparecer */
+    }
+    100% {
+      opacity: 0; /* Permanece invisible */
+    }
+  }
 
 #topbarsocialmedia {
     display: flex;
-    width: 50%;
-    height: 3vh;
-    justify-content: right;
+    width: 100%;
+    height: 4vh;
     align-items: center;
-    padding-right: 3%;
-    gap: 1%;
+    justify-content: center;
+    margin-top: 0vh;
+    padding-top: 2vh;
+    gap: 2vh;
+    border-top: 0.1vh solid #60A5FA;
+}
+
+#topbarsocialmedia2 {
+    display: flex;
+    width: 100%;
+    height: 4vh;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1vh;
+    gap: 2vh;
 }
 
 #topbarsocialmedia img {
-    width: 2.5vh;
-    height: 2.5vh;
+    width: 4vh;
+    height: 4vh;
+    border-radius: 20%;
+}
+
+#topbarsocialmedia2 img {
+    width: 4vh;
+    height: 4vh;
     border-radius: 20%;
 }
 
 #left-bar {
-    height: 97vh;
-    width: 20%;
+    height: 100vh;
+    width: 20vw;
     background-color: #1E3A8A;
     display: flex;
     flex-direction: column;
     align-items: center;
     position: fixed;
-    top: 3vh;
 }
 
 #profile-pic img {
@@ -88,8 +123,6 @@ body {
     width: 95%;
     height: 40vh;
     padding: 0px;
-    margin-top: 1vh;
-    margin-bottom: 1vh;
 }
 
 #left-description {
@@ -107,6 +140,7 @@ body {
     height: 6vh;
     text-align: center;
     font-size: 5rem;
+    margin-top: 1vh;
 }
 
 #left-description h2{
@@ -126,9 +160,9 @@ body {
     flex-direction: column;
     width: 100%;
     text-align: center;
-    height: 47vh;
-    gap: 3vh;
-    padding-top: 3vh;
+    height: 32vh;
+    gap: 1.5vh;
+    padding-top: 1vh;
 }
 
 #left-menu a {
