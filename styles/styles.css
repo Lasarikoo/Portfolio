@@ -1,5 +1,5 @@
 * {
-    border: 1px dashed red;
+    border: 0px dashed red;
     margin: 0px;
     padding: 0%;
 }
@@ -552,3 +552,46 @@ body {
     margin-right: 2%;
     margin-bottom: 5vh;
 }
+
+.portfolio-cards {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    gap: 5%;
+    justify-content: center;
+    margin-bottom: 5vh;
+}
+
+.single-portfolio {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 45%;
+    height: 40vh;
+    overflow: hidden;
+    box-shadow:  0 0 10px rgba(128, 128, 128, 0.301);
+    border-radius: 15px;
+}
+
+.single-portfolio h3 {
+    color: #60A5FA;
+    font-size: 3vh;
+    margin-top: 1vh;
+    text-align: center;
+}
+
+.single-portfolio p {
+    color: black;
+    font-size: 2.3vh;
+    margin-top: 1vh;
+    text-align: center;
+}
+
+.portfolio-img {
+    width: 100%;
+}
+
+
+
+
+
