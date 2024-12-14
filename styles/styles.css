@@ -583,7 +583,7 @@ body {
     border-radius: 15px;
     box-shadow:  0 0 10px rgba(128, 128, 128, 0.301);
     margin-top: 5vh;
-    margin-bottom: 15vh;
+    margin-bottom: 7vh;
 }
 
 #contact-form h3 {
@@ -606,12 +606,13 @@ form {
     flex-direction: row;
     width: 100%;
     margin-bottom: 1vh;
+    justify-content: center;
 }
 
 #form-name {
     display: flex;
     flex-direction: row;
-    width: 33%;
+    width: 40%;
 }
 
 #form-name label {
@@ -628,7 +629,7 @@ form {
 #form-company {
     display: flex;
     flex-direction: row;
-    width: 50%;
+    width: 40%;
 }
 
 #form-company label {
@@ -643,6 +644,55 @@ form {
     margin-right: 1%;
 }
 
+#form-message {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+}
+
+#message-form {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+}
+
+textarea {
+    margin-top: 1.5vh;
+    margin-bottom: 2.5vh;
+    height: 100%;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow:  0 0 10px rgba(128, 128, 128, 0.301);
+    height: 12.5vh;
+    font-size: 2rem;
+    color: black;
+}
+
+#form-newsletter {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+}
+
+#newsletter-form {
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    align-items: center;
+    color: black;
+}
+
+#newsletter-form label {
+    font-size: 2rem;
+}
+
+#newsletter-form input {
+    height: 100%;
+    box-shadow: none;
+}
+
 label {
     font-size: 3vh;
     font-weight: bold;
@@ -652,10 +702,28 @@ label {
 
 input {
     height: 100%;
-    border: 0vh solid black;
     text-align: center;
     border-radius: 15px;
     box-shadow:  0 0 10px rgba(128, 128, 128, 0.301);
+    font-size: 2rem;
+    color: black;
+}
+
+#form-button {
+    width: 80%;
+    margin: auto;
+    height: 3.5vh;
+    background-color: #60A5FA;
+    color: #F3F4F6;
+    border-radius: 15px;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+#contact-footer {
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 4vh;
 }
 
 .portfolio-cards {
@@ -700,3 +768,6 @@ input {
 
 
 
+@media (min-width: 270px) and (max-width: 1000px) {
+    
+}

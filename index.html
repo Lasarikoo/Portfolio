@@ -409,7 +409,7 @@
 						</div>
 						<div id="contact-form">
 							<h3>Contact form</h3>
-							<form>
+							<form action="send-email.php" method="post">
 								<div id="form-row">
 									<div id="form-name">
 										<label for="name">Name:</label>
@@ -430,16 +430,25 @@
 										<input type="email" id="email" name="email" placeholder="example@example.com" required>
 									</div>
 								</div>
-								
-								
-								<label for="Message">Message</label>
-								<textarea id="message" name="message" placeholder="Write your text here..." required></textarea>
-								<label for="newsletter">Suscribe to newsletter.</label>
-								<input type="checkbox" id="newsletter" name="newsletter">
-								<button type="submit">Send</button>
+								<div id="form-message">
+									<div id="message-form">
+										<label for="Message">Message</label>
+										<textarea id="message" name="message" placeholder="Write your text here..." required></textarea>
+									</div>
+								</div>
+								<div id="form-newsletter">
+									<div id="newsletter-form">
+										<label for="newsletter">
+											<input type="checkbox" id="newsletter" name="newsletter"> Subscribe to newsletter.
+										</label>
+									</div>
+								</div>
+								<button type="submit" id="form-button">Send</button>
 							</form>
 						</div>
-						
+						<div id="contact-footer">
+							<h3>You can also contact me with any other method that you can find throughout the web.</h3>
+						</div>
 					</div>
 				</div>
 			</div>
