@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Redirigiendo...</title>
+        <script>
+            // Detecta el idioma del navegador
+            const userLang = navigator.language || navigator.userLanguage;
+
+            // Redirige según el idioma detectado
+            if (userLang.startsWith('es')) {
+                window.location.href = "/es/index.html";
+            } else {
+                window.location.href = "/en/index.html";
+            }
+        </script>
+    </head>
+    <body>
+        <p>Redirigiendo a la versión adecuada de la página...</p>
+    </body>
+</html>
