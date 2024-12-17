@@ -38,12 +38,14 @@ body {
 }
 
 .phone-link {
-    left: 7.5vh;
+    width: 100%;
+    text-align: center;
     animation-delay: 10s;
 }
 
 .mail-link {
-    left: 4vh;
+    width: 100%;
+    text-align: center;
     animation-delay: 15s;
 }
 
@@ -332,6 +334,36 @@ body {
     box-shadow: 0 0 10px #075E54;
 }
 
+#Translate-button {
+    background-color: white;
+    border-radius: 50%;
+    width: 5vh;
+    position: fixed;
+    right: 2vh;
+    top: 2vh;
+    gap: 1vh;
+}
+
+#Translate-button:hover {
+    box-shadow: 0 0 10px grey;
+}
+
+#Upside-button {
+    background-color: white;
+    border-radius: 50%;
+    width: 3vh;
+    position: fixed;
+    right: 2vh;
+    bottom: 2vh;
+    padding: 1vh;
+    box-shadow: 0 0 3px grey;
+}
+
+#Upside-button:hover {
+    box-shadow: 0 0 10px grey;
+}
+
+
 #LinkedIn-button {
     background-color: #0E76A8;
     padding: 1vh;
@@ -482,6 +514,8 @@ body {
     flex-direction: row;
     justify-content: center;
     gap: 0.5vh;
+    margin-left: 2.5vw;
+    flex-wrap: wrap;
 }
 
 #services-section {
@@ -852,11 +886,13 @@ input {
     }
 
     .phone-link {
-        left: 30%;
+        width: 100%;
+        text-align: center;
     }
 
     .mail-link {
-        left: 25%;
+        width: 100%;
+        text-align: center;
     }
 
     #content {
@@ -881,7 +917,7 @@ input {
     }
 
     #experience {
-        margin-top: 3vh;
+        margin-top: 5vh;
     }
 
     .job-experience h3 {
@@ -922,12 +958,12 @@ input {
     }
 
     .skills-title {
-        width: 25%;
+        width: 30%;
     }
 
     .skills-tags {
         flex-wrap: wrap;
-        width: 75%;
+        width: 70%;
     }
 
     .portfolio-cards {
@@ -1003,6 +1039,14 @@ input {
     #service-card {
         width: 100%;
         margin-bottom: 3vh;
+    }
+
+    #Translate-button {
+        position: absolute;
+    }
+
+    #translate-button img {
+        width: 50%;
     }
 
 }

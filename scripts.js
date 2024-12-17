@@ -7,4 +7,5 @@ document.addEventListener("DOMContentLoaded", () => {
       leftBar.classList.toggle("active");
     });
   });
+ 
   
